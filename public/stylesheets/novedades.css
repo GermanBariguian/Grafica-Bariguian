@@ -1,0 +1,18 @@
+* {
+    background-color: rgb(214, 161, 159);
+}
+
+
+h1,
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+/* inicio Contactanos */
+
+.contactanos li {
+    margin: 4px 0;
+}
+
+/* fin Contactanos */

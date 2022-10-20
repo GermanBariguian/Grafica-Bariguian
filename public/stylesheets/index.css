@@ -1,0 +1,95 @@
+/*
+font-family: 'Alfa Slab One', cursive;
+*/
+
+footer {
+    background-color: #aaa;
+}
+
+h1,
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.hero {
+    background: url(../images/sitio.jpeg) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 600px;
+    color: rgb(17, 27, 100);
+    font-weight: 1000;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* inicio Novedades */
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 12px 0;
+}
+
+.lista-novedades li a {
+    background-color: white;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+/* fin Novedades */
+
+/* inicio Producciones */
+.producciones {
+    background-color: #a3c9e8;
+    padding-bottom: 4rem !important;
+    text-align: center;
+}
+
+.carousel-item {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 15px;
+}
+/* fin Producciones */
+
+
+/* inicio Nosotros */
+.staff {
+    background: #efefef;
+}
+/* fin Nosotros */
+
+
+/* inicio Contactanos */
+.ger {
+    
+    font-size: medium;
+    text-align: center;
+}
+/* fin Contactanos */

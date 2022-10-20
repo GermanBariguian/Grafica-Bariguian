@@ -1,0 +1,138 @@
+<!-- inicio Home-->
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-4 offset-lg-2">
+            <p>Llevate una buena impresión</p>
+            <h1>GRÁFICA BARIGUIAN</h1>
+            <p>Brindamos atención personalizada y una excelente calidad de servicio con precios competitivos,
+                cumpliendo extrictamente los plazos de entrega.</p>
+        </div>
+    </div>
+</div>
+<!-- fin Home-->
+
+
+<div class="row my-3">
+    <!-- inicio Novedades -->
+    <div id="novedades" class="col-md-5 offset-md-2 py-3">
+        <h2>Novedades</h2>
+        <ul class="lista-novedades">
+            <li><a href="novedades"><img src="images/promo agosto.jpeg">Promo Agosto</a></li>
+            <li><a href="novedades"><img src="images/promo 2x1.jpeg">Promo 2x1</a></li>
+            <li><a href="novedades"><img src="images/StickerLand.jpeg">Promo Sticker paa</a></li>
+        </ul>
+    </div>
+    <!-- fin Novedades -->
+
+    <!-- inicio Producciones-->
+    <div class="col-md-3 my-3">
+        <div class="rounded py-5 producciones">
+            <h2 class="text center">Producciones</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h5>Tarjetas</h5>
+                        <a href="producciones"><img src="images/tarjetas.jpeg" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <h5>Plotter</h5>
+                        <a href="producciones"><img src="images/plotter.jpeg" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <h5>Folletos</h5>
+                        <a href="producciones"><img src="images/folleto.jpeg" class="d-block w-100"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <h5>Packaging</h5>
+                        <a href="producciones"><img src="images/packaging.jpeg" class="d-block w-100"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- fin Producciones -->
+</div>
+
+
+<div class="row my-3 staff">
+    <!-- inicio Nosotros -->
+    <div id="nosotros" class="col-md-10 offset-md-3 py-3">
+        <h2>Nosotros</h2>
+        <div class="card mb-3" style="max-width: 900px;">
+            <div class="row g-0">
+                <div class="col-md-1000">
+                    <img src="images/grafica bariguian.jpeg" class="img-fluid rounded-start" alt="¿Quiénes somos?">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Quiénes somos?</h5>
+                        <p class="card-text"> Una imprenta familiar que se dedica a cumplir con todos los pedidos en
+                            tiempo y forma mejor que nadie, siempre dando todo lo mejor y más.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin Nosotros -->
+</div>
+
+
+<div class="row my-3 ger">
+    <!-- inicio Contactanos -->
+    <div class="col-md-5 offset-md-2 py-3">
+        <div class="row text-center contactanos">
+            <h2>Contactanos</h2>
+            <form class="row g-3" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+                </div>
+                <div class="col-12">
+                    <label for="tel" class="form-label">Teléfono</label>
+                    <input class="form-control" id="tel" placeholder="..." name="tel">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <p>{{message}}</p>
+        </div>
+    </div>
+    <!-- fin Contactanos -->
+
+    <!-- inicio Visitanos -->
+    <div class="col-md-3 my-3">
+        <div id="visitanos">
+            <h2>Visitanos</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7061509215705!2d-58.42541758417418!3d-34.636865366760986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbaf2a7e8fa5%3A0xb68cd2fd32e3c6c0!2sMet%C3%A1n%204201%2C%20C1240AEM%20CABA!5e0!3m2!1ses-419!2sar!4v1660089138168!5m2!1ses-419!2sar"
+                width="580" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- fin Visitanos -->
+</div>
+
+<!-- fin contenedor principal-->
