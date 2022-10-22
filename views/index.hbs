@@ -18,9 +18,10 @@
         <h2>Novedades</h2>
         <ul class="lista-novedades">
             {{#each novedades}}
-            <li><a href="novedades"><img src="images/promo agosto.jpeg">Promo Agosto</a></li>
-            <li><a href="novedades"><img src="images/promo 2x1.jpeg">Promo 2x1</a></li>
-            <li><a href="novedades"><img src="images/StickerLand.jpeg">Promo Sticker paa</a></li>
+            <li>
+                <a href="novedades" data-bs-target="#Novedades{{id}}"><img src="{{imagen}}"> {{titulo}}</a>
+            </li>
+            {{/each}}
         </ul>
     </div>
     <!-- fin Novedades -->
@@ -135,5 +136,3 @@
     </div>
     <!-- fin Visitanos -->
 </div>
-
-<!-- fin contenedor principal-->
