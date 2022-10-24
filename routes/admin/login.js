@@ -12,7 +12,7 @@ router.get('/', function (req, res, next) {
 router.get("/logout", function (req, res, next) {
   req.session.destroy(); // destruir
   res.render("admin/login", {
-    layout: "admin/login"
+    layout: "admin/layout"
   });
 });
 

@@ -9,7 +9,6 @@ var session = require('express-session');
 var fileUpload = require('express-fileUpload');
 
 var indexRouter = require('./routes/index');
-var produccionesRouter = require("./routes/producciones");
 var loginRouter = require("./routes/admin/login");
 var adminRouter = require("./routes/admin/novedades");
 
@@ -50,7 +49,6 @@ app.use(fileUpload({
 }));
 
 app.use('/', indexRouter);
-app.use('/producciones', produccionesRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
 

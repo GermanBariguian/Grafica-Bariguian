@@ -61,7 +61,7 @@ router.post("/", async (req, res, next) => {
 
   var info = await transporter.sendMail(obj);
 
-  res.render("index", {
+  res.render('index', {
     message: "Mensaje enviado correctamente",
   })
 

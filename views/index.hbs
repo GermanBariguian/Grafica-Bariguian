@@ -1,7 +1,7 @@
 <!-- inicio Home-->
 <div class="container-fluid">
     <div id="home" class="row align-items-center hero">
-        <div class="col-lg-4 offset-lg-2">
+        <div class="col-lg-4 offset-lg-2 circle">
             <p>Llevate una buena impresión</p>
             <h1>GRÁFICA BARIGUIAN</h1>
             <p>Brindamos atención personalizada y una excelente calidad de servicio con precios competitivos,
@@ -19,7 +19,7 @@
         <ul class="lista-novedades">
             {{#each novedades}}
             <li>
-                <a href="javascript:void(0)" data-toggle="modal" data-bs-target="#Modal{{id}}"><img src="{{imagen}}">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="{{imagen}}">
                     {{titulo}}</a>
             </li>
             {{/each}}
@@ -49,37 +49,88 @@
 
     <!-- inicio Producciones-->
     <div class="col-md-3 my-3">
-        <div class="rounded py-5 producciones">
+        <div class="rounded py-5 producciones" id="producciones">
             <h2 class="text center">Producciones</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel slide" data-bs-ride="carousel" data-bs-toggle="modal" data-bs-target="#Modal2">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <h5>Tarjetas</h5>
-                        <a href="producciones"><img src="images/tarjetas.jpeg" class="d-block w-100"></a>
+                        <a href="#"><img src="images/carrousel1.jpeg" class="d-block w-100"></a>
                     </div>
                     <div class="carousel-item">
-                        <h5>Plotter</h5>
-                        <a href="producciones"><img src="images/plotter.jpeg" class="d-block w-100"></a>
+
+                        <a href="#"><img src="images/carrousel2.jpeg" class="d-block w-100"></a>
                     </div>
                     <div class="carousel-item">
-                        <h5>Folletos</h5>
-                        <a href="producciones"><img src="images/folleto.jpeg" class="d-block w-100"></a>
+                        <a href="#"><img src="images/carrousel3.jpeg" class="d-block w-100"></a>
                     </div>
                     <div class="carousel-item">
-                        <h5>Packaging</h5>
-                        <a href="producciones"><img src="images/packaging.jpeg" class="d-block w-100"></a>
+                        <a href="#"><img src="images/carrousel4.jpeg" class="d-block w-100"></a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="background-color: rgb(239, 220, 220);">
+            <div class="modal-dialog">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Packaging</h2>
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-6 col-sm-12">
+                                <img src="images/packaging.jpeg">
+                            </div>
+                            <div class="col-6 col-sm-12 detalle">
+                                Confeccionamos estuches, cajas y todo tipo de contenedores para que tus productos se
+                                destaquen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Material publicitario</h2>
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-6 col-sm-12">
+                                <img src="images/tarjetas!.jpeg">
+                            </div>
+                            <div class="col-6 col-sm-12 detalle">
+                                Imprimimos folletos, tarjetas, stickers. Los mejores diseños para que publicites tus
+                                productos y/o servicios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Plotteado</h2>
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-6 col-sm-12">
+                                <img src="images/plotter.jpeg">
+                            </div>
+                            <div class="col-6 col-sm-12 detalle">
+                                Impresiones de gran tamaño. Sobre todo tipo de sustratos. Para decorar y/o señalizar
+                                tus
+                                espacios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Papelería Comercial</h2>
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-6 col-sm-12">
+                                <img src="images/sobre.jpeg">
+                            </div>
+                            <div class="col-6 col-sm-12 detalle">
+                                Todos los documentos comerciales que necesitas en tu oficina: hojas membrete,
+                                sobres,
+                                facturas y remitos y mucho más...
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -93,10 +144,10 @@
         <h2>Nosotros</h2>
         <div class="card mb-3" style="max-width: 900px;">
             <div class="row g-0">
-                <div class="col-md-1000">
+                <div class="col-md-100">
                     <img src="images/grafica bariguian.jpeg" class="img-fluid rounded-start" alt="¿Quiénes somos?">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-100">
                     <div class="card-body">
                         <h5 class="card-title">¿Quiénes somos?</h5>
                         <p class="card-text"> Una imprenta familiar que se dedica a cumplir con todos los pedidos en
@@ -113,8 +164,8 @@
 <div class="row my-3 ger">
     <!-- inicio Contactanos -->
     <div class="col-md-5 offset-md-2 py-3">
-        <div class="row text-center contactanos">
-            <h2>Contactanos</h2>
+        <div class="row contactanos">
+            <h2 id="contactanos">Contactanos</h2>
             <form class="row g-3" action="/" method="post">
                 <div class="col-md-6">
                     <label for="nombre" class="form-label">Nombre</label>
@@ -151,7 +202,7 @@
             <h2>Visitanos</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7061509215705!2d-58.42541758417418!3d-34.636865366760986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbaf2a7e8fa5%3A0xb68cd2fd32e3c6c0!2sMet%C3%A1n%204201%2C%20C1240AEM%20CABA!5e0!3m2!1ses-419!2sar!4v1660089138168!5m2!1ses-419!2sar"
-                width="580" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                width="580" height="455" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
