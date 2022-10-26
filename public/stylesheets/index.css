@@ -104,3 +104,11 @@ h2 {
     font-size: medium;
     }
 /* fin Contactanos */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}
